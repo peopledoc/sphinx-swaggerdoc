@@ -37,8 +37,15 @@ generates the documentation for the methods contained in tags **pet** and
 .. code:: restructuredtext
 
     .. swaggerv2doc:: http://petstore.swagger.io/v2/swagger.json
-       pet
-       store
+        :resources: pet,store
+
+Or by operation id:
+
+.. code:: restructuredtext
+
+    .. swaggerv2doc:: http://petstore.swagger.io/v2/swagger.json
+        :operations_ids: getPetById
+
 
 Note
 ====
